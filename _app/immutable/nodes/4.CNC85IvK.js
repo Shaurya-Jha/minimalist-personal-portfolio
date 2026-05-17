@@ -1,1 +1,0 @@
-import{n as e}from"../chunks/BOt4i2Pk.js";export{e as component};
