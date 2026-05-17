@@ -24,7 +24,7 @@
 	// console.log('Fixed links: ', links);
 </script>
 
-<div class="flex h-full w-full justify-center py-10">
+<div class="flex h-full w-full justify-center px-2 py-10">
 	<div class="flex h-full w-2xl flex-col items-center gap-16">
 		<!-- header -->
 		<!-- <Header /> -->

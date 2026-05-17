@@ -4,7 +4,7 @@
 		role: string;
 		company: string;
 		from: Date;
-		to: Date | 'Present';
+		to: Date | 'Current';
 		responsibilities: string[];
 	}
 
@@ -14,7 +14,7 @@
 			role: 'full stack developer',
 			company: 'kackersoft',
 			from: new Date('2025-01-01'),
-			to: 'Present',
+			to: 'Current',
 			responsibilities: [
 				'Eliminated N+1 query bottlenecks by strategically applying Django ORM techniques (select_related and prefetch_related), resulting in a 2x to 4x improvement in API response times for critical endpoints.',
 				'Shipped type-safe, performant web applications using React, Next.js, and TypeScript with a focus on modular architecture.',
@@ -31,7 +31,7 @@
 			to: new Date('2024-12-31'),
 			responsibilities: [
 				'Built, maintained and developed required RESTful APIs using Django and Django Rest Framework (DRF) for communication between front-end and back-end systems.',
-				'Implemented comprehensive unit and integration testing using DRF’s APITestCase suites to ensure high code quality and system operability for core application features.',
+				"Implemented comprehensive unit and integration testing using DRF's APITestCase suites to ensure high code quality and system operability for core application features.",
 				'Worked with Django ORM to manage database operations, including migrations, queries, and relationship handling.',
 				'Participated in the full software development lifecycle (SDLC), contributing to feature planning and collaborating with senior developers to resolve production issues.'
 			]
