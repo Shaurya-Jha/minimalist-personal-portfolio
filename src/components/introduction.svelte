@@ -1,14 +1,8 @@
 <div class="flex w-full flex-col items-center justify-between gap-4">
 	<p>
 		Full Stack Engineer with nearly 2 years of experience building scalable web applications using
-		React, TypeScript, and Django. Specialized in backend performance optimization and API design,
-		achieving up to 4x improvements in response times. Experienced in building end-to-end systems
+		React, TypeScript, and Django. Experienced in building end-to-end systems
 		across frontend, backend, and deployment.
-	</p>
-
-	<p>
-		I’m currently deep-diving into low-level systems - exploring software internals to build more
-		performant, memory-efficient applications from the ground up.
 	</p>
 
 	<!-- connect with me -->

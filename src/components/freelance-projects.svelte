@@ -27,11 +27,11 @@
 	</h2>
 
 	<!-- Projects List -->
-	<div class="space-y-6">
+	<div class="space-y-6 ml-2">
 		{#each freelanceProjects as project (project.id)}
 			<div class="space-y-1.5">
 				<!-- Project Name / Link -->
-				<h3 class="font-medium">
+				<h3 class="font-medium flex items-center justify-between">
 					{#if project.url}
 						<a href={project.url} rel="external" class="underline underline-offset-4 hover:opacity-80 transition-opacity">
 							{project.name}
@@ -42,7 +42,7 @@
 				</h3>
 
 				<!-- Project Details -->
-				<div class="space-y-2 mt-3 px-2">
+				<!-- <div class="space-y-2 mt-3 px-2">
 					{#if project.technologies}
 						<p><span class="opacity-80">Tech:</span> {project.technologies}</p>
 					{/if}
@@ -52,7 +52,7 @@
 							<p>{paragraph}</p>
 						{/each}
 					{/if}
-				</div>
+				</div> -->
 			</div>
 		{/each}
 	</div>

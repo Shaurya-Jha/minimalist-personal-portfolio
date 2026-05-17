@@ -48,13 +48,16 @@
 	</h2>
 
 	<!-- Certifications List -->
-	<div class="space-y-3">
+	<div class="space-y-3 ml-2">
 		{#each certifications as certificate (certificate.id)}
 			<div class="leading-relaxed">
 				<!-- Certificate Name with conditional link formatting -->
 				<span class="font-medium capitalize text-base-content">
 					{#if certificate.url && certificate.url !== '/' && certificate.url !== ''}
-						<a href={certificate.url} rel="external" class="underline underline-offset-4 hover:opacity-80 transition-opacity">
+						<!-- <a href={certificate.url} rel="external" class="underline underline-offset-4 hover:opacity-80 transition-opacity">
+							{certificate.name}
+						</a> -->
+						<a href={certificate.url} rel="external" class="hover:opacity-80 transition-opacity">
 							{certificate.name}
 						</a>
 					{:else}
@@ -63,8 +66,8 @@
 				</span>
 
 				<!-- Issuing Body -->
-				<span class="opacity-70 lowercase text-sm px-1">via</span>
-				<span class="opacity-80 capitalize">{certificate.issuedBy}</span>
+				<!-- <span class="opacity-70 lowercase text-sm px-1">via</span>
+				<span class="opacity-80 capitalize">{certificate.issuedBy}</span> -->
 			</div>
 		{/each}
 	</div>

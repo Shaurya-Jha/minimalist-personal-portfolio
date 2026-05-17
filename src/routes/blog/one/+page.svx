@@ -1,0 +1,17 @@
+---
+title: We tried Bun toolkit
+---
+
+We tried Bun and it felt like upgrading from an HDD to an SSD. ⚡
+
+We’ve all been there: starting a Node.js project and spending the first 20 minutes wrestling with Babel, TypeScript configs, and Jest just to get  "Hello World" to run.
+
+For our latest project, we decided to swap Node.js for Bun. Here's my honest take:
+
+The Good (Why Bun might be winning me over):
+
+- ✅ **Zero-Config TypeScript:** No more tsconfig headaches or ts-node. Bun runs .ts and .jsx files natively out of the box.
+- ✅ **Ludicrous Speed:** `bun install` finishes in seconds. The binary lockfile makes npm feel like dial-up.
+- ✅ **The "All-in-One" Magic:** It’s not just a runtime. It’s a package manager, a bundler, and a test runner (replacing Jest/Vitest) all in one tool.
+
+**The Reality Check:** Node.js isn't going anywhere. For enterprise stability and massive ecosystems, the "Old Guard" still holds the crown. But for greenfield projects and rapid prototyping? Bun is a breath of fresh air and makes coding fun again.

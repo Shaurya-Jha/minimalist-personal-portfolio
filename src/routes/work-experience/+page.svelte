@@ -64,8 +64,8 @@
 
 <div class="w-full space-y-6">
 	<!-- Section Header -->
-	<h2 class="tracking-wider uppercase font-medium">
-		<a rel="external" href='/work-experience'>Work Experience</a>
+	<h2 class="tracking-wider uppercase font-medium text-xl">
+		Work Experience
 	</h2>
 
 	<!-- Experience List -->
@@ -89,7 +89,7 @@
 				<!-- Responsibilities Bullet Points -->
 				<ul class="text-md space-y-1.5 opacity-80 list-disc pl-4 marker:opacity-40">
 					{#each experience.responsibilities as resp, i (i)}
-						<!-- <li class="leading-relaxed">{resp}</li> -->
+						<li class="leading-relaxed">{resp}</li>
 					{/each}
 				</ul>
 			</div>
