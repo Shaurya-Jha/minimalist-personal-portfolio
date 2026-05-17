@@ -1,0 +1,1 @@
+import{n as e}from"../chunks/BounWgej.js";export{e as component};
