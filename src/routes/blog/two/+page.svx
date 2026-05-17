@@ -1,8 +1,9 @@
+
 ---
 title: Supercharge Your Django Queries with Django Silk
 ---
 
-Recently, while working on my APIs, I noticed an interesting issue - the response times were longer than expected 🤔. 
+Recently, while working on my APIs, I noticed an interesting issue - the response times were longer than expected 🤔.
 
 As performance is key to delivering a smooth user experience, I decided to investigate further. That’s when I came across **Django Silk**, a powerful **profiling tool** for Django applications.
 
@@ -19,6 +20,10 @@ After optimization, Django Silk helped verify the improvements. The response tim
 
 In the below image, you can see how code optimization drastically reduces the response time - from 12ms to just 1ms 🚀 for /api/orders endpoint.
 
-![](/public/django-silk-usage.jpeg "Django Silk")
+![]({base}/public/django-silk-usage.jpeg "Django Silk")
 
 💡 **Key Takeaway:** Profiling tools like Django Silk make it easy to detect and fix inefficient queries, making your applications more efficient and scalable.
+
+<script>
+    import {base} from '$app/paths';
+</script>

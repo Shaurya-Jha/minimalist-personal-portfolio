@@ -7,11 +7,11 @@ const config = {
 	compilerOptions: {
 		// Force runes mode for the project, except for libraries. Can be removed in svelte 6.
 		runes: ({ filename }) => {
-					if (filename.split(/[/\\]/).includes('node_modules')) return undefined;
-					// 👇 ADD THIS LINE: Tells Svelte 5 to use legacy mode for MDsveX files
-					if (filename.endsWith('.svx') || filename.endsWith('.md')) return false; 
-					return true;
-				}
+			if (filename.split(/[/\\]/).includes('node_modules')) return undefined;
+			// 👇 ADD THIS LINE: Tells Svelte 5 to use legacy mode for MDsveX files
+			if (filename.endsWith('.svx') || filename.endsWith('.md')) return false;
+			return true;
+		}
 	},
 	kit: {
 		// adapter-auto only supports some environments, see https://svelte.dev/docs/kit/adapter-auto for a list.
@@ -25,12 +25,15 @@ const config = {
 			strict: true
 		}),
 		paths: {
-					base: process.env.NODE_ENV === 'production'
-						? '/minimalist-personal-portfolio'
-						: ''
-				}
+			base: process.env.NODE_ENV === 'production' ? '/minimalist-personal-portfolio' : ''
+		}
 	},
-	preprocess: [mdsvex({ extensions: ['.svx', '.md'], layout: path.resolve('./src/components/blog-layout.svelte') })],
+	preprocess: [
+		mdsvex({
+			extensions: ['.svx', '.md'],
+			layout: path.resolve('./src/components/blog-layout.svelte')
+		})
+	],
 	extensions: ['.svelte', '.svx', '.md']
 };
 
