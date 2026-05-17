@@ -1,0 +1,1 @@
+import{n as e}from"../chunks/D-22WWWy.js";export{e as component};
